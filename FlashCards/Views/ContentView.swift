@@ -25,9 +25,17 @@ struct ContentView: View {
         ScrollView {
             
             // Show question
-            Text(currentCard.question)
-                .font(.largeTitle)
-                .multilineTextAlignment(.center)
+            HStack {
+                
+                Spacer()
+                
+                Text(currentCard.question)
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+
+            }
             
             // Check answer
             Button(action: {
