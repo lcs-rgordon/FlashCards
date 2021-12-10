@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ScrollView {
+            
             // Show question
             Text("What is the \"powerhouse\" of a cell?")
                 .font(.largeTitle)
@@ -22,7 +23,20 @@ struct ContentView: View {
                 Text("Check")
             })
                 .buttonStyle(.bordered)
+
+            // Show answer
+            Text("mitochrondria")
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
             
+            // Show a new question
+            Button(action: {
+                // Hide the answer
+            }, label: {
+                Text("Another")
+            })
+                .buttonStyle(.bordered)
+
             
         }
         .padding()
